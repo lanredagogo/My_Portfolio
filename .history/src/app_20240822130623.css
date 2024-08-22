@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+section {
+    color: white;
+}
+
+p {
+    color: white;
+}
