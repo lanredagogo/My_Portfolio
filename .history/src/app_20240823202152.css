@@ -81,13 +81,8 @@ button:hover {
 
 .services-card {
     max-width: 380px;
-    box-shadow: 0px 0px 20px 20px #0f3762fd;
+    box-shadow: 0px 0px 15px 15px #0f3762fd;
     border-radius: 25px;
-}
-
-.services-card:hover {
-    margin-top: -1rem;
-    box-shadow: 0px 0px 30px 30px #0f3762fd;
 }
 
 
