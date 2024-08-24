@@ -1,0 +1,246 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*, *::after, *::before {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+/*header {
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    right:0%;
+}
+
+header ul > li:hover {
+   color:#0ef;
+}*/
+
+.header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #f4f4f4;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+
+.social-links {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #0ef;
+    border-radius: 100px;
+}
+
+.social-links:hover {
+    box-shadow: 0px 0px 5px 5px #0ef;
+}
+
+.profile-page {
+    display: grid;
+    place-content: center;
+width: 320px;
+    height: 320px;
+    border: 4px solid #0ef;
+    box-shadow: 0px 0px 25px 25px rgba(0, 238, 255, 0.457);
+}
+
+.profile-page:hover {
+box-shadow: 0px 0px 25px 25px rgba(0, 238, 255, 0.99);
+}
+
+.profile-img {
+    background-image: url(/build/images/dagogo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 270px;
+        height: 270px;
+        
+        box-shadow: 0px 0px 20px 20px rgba(0, 238, 255, 0.491);
+}
+
+button {
+    padding: 7.5px 1.7rem;
+    background-color: #0ef;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 40px;
+    box-shadow: 0px 0px 5px 5px #0ef;
+    text-align: center;
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px 10px #0ef;
+}
+
+.services-card {
+    max-width: 380px;
+    box-shadow: 0px 0px 20px 20px #0f3762fd;
+    border-radius: 25px;
+}
+
+.services-card:hover {
+    margin-top: -1rem;
+    box-shadow: 0px 0px 30px 30px #0f3762fd;
+}
+
+
+
+ @keyframes slideIn {
+     0% {
+         transform: translateY(50%);
+         opacity: 0;
+     }
+
+     100% {
+         transform: translateY(0);
+         opacity: 1;
+     }
+ }
+
+ .about-me.animate {
+     animation: slideIn 1s ease-out forwards;
+    
+ }
+
+
+
+

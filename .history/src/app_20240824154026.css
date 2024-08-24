@@ -18,9 +18,24 @@ body {
     position: relative;
 }
 
+#menu-btn:checked~.menu {
+    @apply flex flex-col space-y-1;
+    /* Tailwind classes to make the menu visible and stack vertically */
+}
 
+#menu-btn:checked~label .navicon {
+    @apply bg-transparent;
+}
 
-header {
+#menu-btn:checked~label .navicon span:first-child {
+    @apply rotate-[-45deg];
+}
+
+#menu-btn:checked~label .navicon span:last-child {
+    @apply rotate-[45deg];
+}
+
+/*header {
     width: 100%;
     position: fixed;
     top: 0%;
@@ -29,7 +44,7 @@ header {
 
 header ul > li:hover {
    color:#0ef;
-}
+}*/
 
 
 .social-links {

@@ -18,8 +18,6 @@ body {
     position: relative;
 }
 
-
-
 header {
     width: 100%;
     position: fixed;
@@ -92,24 +90,20 @@ button:hover {
     box-shadow: 0px 0px 30px 30px #0f3762fd;
 }
 
+.about-me {
+    animation: slideIn 1s ease-out;
+}
 
-
- @keyframes slideIn {
-     0% {
-         transform: translateY(50%);
-         opacity: 0;
-     }
-
-     100% {
-         transform: translateY(0);
-         opacity: 1;
-     }
- }
-
- .about-me.animate {
-     animation: slideIn 1s ease-out forwards;
-    
- }
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
 
 
 
