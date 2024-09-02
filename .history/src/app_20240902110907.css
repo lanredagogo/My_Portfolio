@@ -99,9 +99,16 @@ background-image: url(/build/images/image\ copy.png);
     background-repeat: no-repeat;
     max-width: 450px;
     height: 400px;
+    
 }
 
+.my-project_hover {
+    margin-top: 350px;
+}
 
+.my-project_hover:hover {
+    margin-top: 50px;
+}
  
  
 

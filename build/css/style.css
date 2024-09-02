@@ -736,6 +736,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -811,6 +815,10 @@ video {
   font-size: 1.25rem;
 }
 
+.text-\[1\.5rem\] {
+  font-size: 1.5rem;
+}
+
 .text-\[1\.7rem\] {
   font-size: 1.7rem;
 }
@@ -842,6 +850,11 @@ video {
 .text-\[\#0ef\] {
   --tw-text-opacity: 1;
   color: rgb(0 238 255 / var(--tw-text-opacity));
+}
+
+.text-\[white\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -933,20 +946,12 @@ button:hover {
   box-shadow: 0px 0px 30px 30px #0f3762fd;
 }
 
-@keyframes slideIn {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.about-me.animate {
-  animation: slideIn 1s ease-out forwards;
+.my-project_img {
+  background-image: url(/build/images/image\ copy.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 450px;
+  height: 400px;
 }
 
 @media (min-width: 768px) {
@@ -1053,6 +1058,10 @@ button:hover {
     padding-left: 6rem;
   }
 
+  .md\:text-start {
+    text-align: start;
+  }
+
   .md\:text-\[2rem\] {
     font-size: 2rem;
   }
@@ -1062,6 +1071,8 @@ button:hover {
   }
 }
 
+
+ 
  
 
 
