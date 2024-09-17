@@ -103,17 +103,12 @@ background-image: url(/build/images/image\ copy.png);
 
 input, textarea {
     padding: 1em;
-    width: 100%;
-    border-radius: 6px;
-    background-color: rgb(107, 107, 107);
 }
 
-input::placeholder{
+input::placeholder {
     
     font-size: 1.2rem;
 }
-
-
 
 
  

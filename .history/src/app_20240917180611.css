@@ -106,14 +106,13 @@ input, textarea {
     width: 100%;
     border-radius: 6px;
     background-color: rgb(107, 107, 107);
+    font-size: 1.2rem;
 }
 
 input::placeholder{
     
     font-size: 1.2rem;
 }
-
-
 
 
  
